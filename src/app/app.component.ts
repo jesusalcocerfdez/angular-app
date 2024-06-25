@@ -12,4 +12,10 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Hola Mundo con Angular desde Componente';
   users :string[]=['Pepe','Luis','Maria','Lupe'];
+  //users :string[]=[];
+  visible:boolean=false;
+  setVisible(): void {
+    this.visible = this.visible ? false : true;
+    console.log('hemos hecho clic en setVisible');
+  }
 }
